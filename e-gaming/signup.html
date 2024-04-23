@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaming Tournament Registration Form</title>
+<style>
+body {
+    font-family: 'Roboto', sans-serif; /* Modern, easy-to-read font */
+    margin: 0;
+    padding: 0;
+    background-color: #333333; /* Lighter dark background */
+    color: #f0e6d2; /* Soft cream color for text, easier on the eyes */
+}
+.container {
+    width: 50%;
+    margin: 100px auto;
+    background-color: #404040; /* Soft dark grey */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(218, 165, 32, 0.7); /* Soft gold glow */
+}
+h2 {
+    text-align: center;
+    color: #daa520; /* Muted gold color for headers */
+}
+label {
+    margin-top: 20px;
+    color: #f0e6d2; /* Keeping text readable with a light contrast */
+}
+input {
+    display: block;
+    width: calc(100% - 20px); /* Full width inputs */
+    padding: 10px;
+    margin-top: 5px;
+    background: none;
+    border: 1px solid #555; /* Softer border color */
+    border-radius: 4px;
+    color: #daa520; /* Muted gold text for input text */
+    background-color: #484848; /* Slightly lighter grey for input fields */
+}
+input:focus {
+    outline: none;
+    border-color: #daa520; /* Muted gold border for focus */
+}
+button {
+    background-color: #daa520; /* Muted gold */
+    color: #333;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Spacing above the button */
+}
+button:hover {
+    background-color: #b8860b; /* Darker shade of gold on hover */
+}
+@media (max-width: 768px) {
+    .container {
+        width: 80%; /* More responsive on smaller screens */
+    }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Register for the Tournament</h2>
+<form id="registrationForm" action="/signup" method="post">
+    <label for="fname">Name:</label>
+    <input type="text" id="fname" name="fname" required><br>
+
+    <label for="lname">Team Name:</label>
+    <input type="text" id="lname" name="lname" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="password">password:</label>
+    <input type="password" id="password" name="password" required><br>
+
+    
+    <label for="Tournament">Tournament:</label>
+    <input type="text" id="Tournament" name="Tournament" required>
+
+    <button type="submit">Register</button>
+</form>
+</div>
+</body>
+</html>

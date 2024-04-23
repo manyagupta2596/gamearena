@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gamer's Login</title>
+<style>
+body {
+    font-family: 'Consolas', monospace; /* Maintaining the gaming style font */
+    background-color: #333333; /* Lightening up the background a bit */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form {
+    background: linear-gradient(to right, #444444 0%, #556270 100%); /* Smoother and lighter gradient */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtler shadow for depth */
+    width: 300px;
+    box-sizing: border-box;
+}
+h2 {
+    text-align: center;
+    color: #FFD700; /* Using a gold color for the headings for a rich contrast */
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555555; /* Lighter border for inputs */
+    background: #222222; /* Lightening input background slightly */
+    color: #FFD700; /* Gold text color in inputs */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFD700; /* Vibrant gold button */
+    color: #1a1a1a; /* Dark text for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+input[type="submit"]:hover {
+    background-color: #ccac00; /* Darker shade of gold on hover */
+}
+</style>
+</head>
+<body>
+<form action="/loggedin" method="POST">
+    <h2>Login Portal</h2>
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="submit" value="Login">
+</form>
+</body>
+</html>
